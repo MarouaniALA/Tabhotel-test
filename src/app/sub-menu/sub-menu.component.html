@@ -1,0 +1,8 @@
+<ul *ngFor="let sub of submenu">
+  <span *ngIf="sub.submenus">{{sub.name}}</span>
+  <li *ngIf="!sub.submenus">
+    {{sub.name}}
+  </li>
+  <app-sub-menu *ngIf="sub.submenus" [submenu]="sub.submenus"></app-sub-menu>
+</ul>
+

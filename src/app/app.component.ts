@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,41 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tabhotel-test';
+
+  menus = [
+
+    {
+
+      name: 'link 1',
+
+      submenus: [{name: 'submenu 1'}],
+
+    },
+    {
+
+      name: 'link 2',
+
+      submenus: [{
+
+        name: 'submenu 2',
+
+        submenus: [{
+
+          name: 'submenu 3',
+          submenus: [{name: 'submenu 4', submenus: [{name: 'submenu 5'}]}],
+
+
+        }],
+
+      }],
+
+    },
+    {
+
+      name: 'link 3',
+
+    },
+
+
+  ];
 }
